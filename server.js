@@ -10,6 +10,7 @@ import {fileURLToPath} from 'url'
 import {dirname} from 'path';
 import { indexRouter } from './routes/index.js';
 import { authorRouter } from './routes/authors.js';
+import { bookRouter } from './routes/books.js';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser'; 
 
@@ -33,5 +34,6 @@ db.once('open', error => console.log("connected to mongoose"))
 
 app.use('/', indexRouter)
 app.use('/authors', authorRouter)
+app.use('/books', bookRouter)
 
 app.listen(process.env.PORT || 3000)
