@@ -1,7 +1,7 @@
 import express from 'express'
 
- export const router = express.Router()
+ export const indexRouter = express.Router()
 
- router.get('/', (req, res) => {
+ indexRouter.get('/', (req, res) => {
     res.render('index')
  })
