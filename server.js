@@ -13,6 +13,7 @@ import { authorRouter } from './routes/authors.js';
 import { bookRouter } from './routes/books.js';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser'; 
+import methodOverride from 'method-override'
 
 
 const __filename = fileURLToPath(import.meta.url);
@@ -23,6 +24,7 @@ app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
 app.set('layout',  'layouts/layout')
 app.use(expressLayouts)
+app.use(methodOverride('_method'))
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({limit: '10mb', extended: false}))
 
