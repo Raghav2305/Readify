@@ -1,8 +1,8 @@
-<h2>Search Authors</h2> 
+<h2 class= "page-header">Search Authors</h2> 
 <form action="/authors" method="get">
     <label>Name</label>
     <input type="text" name="name" value="<%= searchOptions.name %>">
-    <button type="submit">Search</button>
+    <button class="btn btn-primary" type="submit">Search</button>
 </form>
 <br>
 
@@ -10,10 +10,13 @@
     <div>
         <%= author.name%>
     </div>
-    <a href="/authors/<%= author.id %>">View</a>
-    <a href="/authors/<%= author.id %>/edit">Edit</a>
+    <div class="btn-row">
+        <a class="btn btn-primary" href="/authors/<%= author.id %>">View</a>
+        <a class="btn btn-primary" href="/authors/<%= author.id %>/edit">Edit</a>
 
-    <%- include("../partials/deleteForm.ejs", {
-        url: `/authors/${author.id}`
-    })%>
-<% }) %>
+        <%- include("../partials/deleteForm.ejs", {
+            url: `/authors/${author.id}`
+        })%>
+    </div>
+        <% }) %>
+    

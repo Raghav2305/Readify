@@ -12,14 +12,18 @@
     <script defer src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
     <script defer src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
      <script defer src="/javascripts/fileUpload.js"></script>
+     <link rel="stylesheet" href="/stylesheets/main.css">
     <title>My Librabry</title>
 </head>
 <body>
-    
+
+<div class="container">
     <%- include('../partials/header.ejs') %>
-    <%- include('../partials/errorMessage.ejs') %>
-    
-    <%- body%>
+    <div class="inner-container">
+        <%- include('../partials/errorMessage.ejs') %>
+        <%- body%>
+    </div> 
+</div>
    
 </body>
 </html>
