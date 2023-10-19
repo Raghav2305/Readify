@@ -10,7 +10,7 @@ Welcome to Readify, a comprehensive full-stack web application designed to make 
 - [Getting Started](#getting-started)
 - [Installation](#installation)
 - [Screenshots](#screenshots)
-- [Technologies](#technologies)
+- [Technologies Used](#technologies)
 - [Contributing](#contributing)
 - [License](#license)
 
