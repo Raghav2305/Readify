@@ -10,7 +10,7 @@ Welcome to Readify, a comprehensive full-stack web application designed to make 
 - [Getting Started](#getting-started)
 - [Installation](#installation)
 - [Screenshots](#screenshots)
-- [Technologies Used](#technologies)
+- [Technologies](#technologies)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -57,7 +57,7 @@ To run this project locally, follow these steps:
  ![authors](https://github.com/Raghav2305/Readify/assets/82498222/27b3dd92-5850-43a1-b9f4-1e02a21f7565)  <br>  <br>
  ![create book](https://github.com/Raghav2305/Readify/assets/82498222/66a89a32-3d9c-423f-93fb-67925fd21cf3)  <br>  <br>
 
-## Technologies Used:
+## Technologies:
 
 - Express.js
 - Node.js
